@@ -37,7 +37,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @care-gray;
+@body-bg:               @care-white;
 //** Global text color on `<body>`.
 @text-color:            @care-black;
 
@@ -156,20 +156,20 @@
 @btn-font-weight:                bold;
 
 @btn-default-color:              @care-white;
-@btn-default-bg:                 @care-orange;
-@btn-default-border:             @care-white;
+@btn-default-bg:                 @care-black;
+@btn-default-border:             darken(@btn-default-bg, 5%);
 
-@btn-primary-color:              @care-white;
-@btn-primary-bg:                 @care-orange-dark;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-darkorg-color:              @care-white;
+@btn-darkorg-bg:                 @care-orange-dark;
+@btn-darkorg-border:             darken(@btn-darkorg-bg, 5%);
 
-@btn-success-color:              #fff;
-@btn-success-bg:                 @brand-success;
-@btn-success-border:             darken(@btn-success-bg, 5%);
+@btn-orange-color:              @care-white;
+@btn-orange-bg:                 @care-orange;
+@btn-orange-border:             darken(@btn-orange-bg, 5%);
 
-@btn-info-color:                 @care-white;
-@btn-info-bg:                    @care-black;
-@btn-info-border:                darken(@btn-info-bg, 5%);
+@btn-info-color:                 @care-black;
+@btn-info-bg:                    @care-white;
+@btn-info-border:                @care-black;
 
 @btn-warning-color:              #fff;
 @btn-warning-bg:                 @brand-warning;
@@ -367,14 +367,14 @@
 @navbar-collapse-max-height:       340px;
 
 @navbar-default-color:             @care-white;
-@navbar-default-bg:                @care-black;
+@navbar-default-bg:                @care-orange;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
 @navbar-default-link-color:                @care-white;
-@navbar-default-link-hover-color:          #333;
+@navbar-default-link-hover-color:          @care-white;
 @navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
+@navbar-default-link-active-color:         @care-white;
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
