@@ -1,4 +1,6 @@
-//
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Montserrat:700);
+
+
 // Variables
 // --------------------------------------------------
 
@@ -20,30 +22,39 @@
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
+//== Malawi Site Primary Colors
+//
+//## Here are the variables for the main colors used in the current comps
+
+@care-orange: #e4782e;
+@care-orange-dark: #c7682e;
+@care-black: #231d1f;
+@care-gray: #b7b7b7;
+@care-white: #fff;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               @care-gray;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @care-black;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            @care-orange;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 //** Link hover decoration.
-@link-hover-decoration: underline;
+@link-hover-decoration: none;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       "Droid Serif", Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -102,9 +113,9 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        0px;
+@border-radius-large:       0px;
+@border-radius-small:       0px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -142,22 +153,22 @@
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-@btn-font-weight:                normal;
+@btn-font-weight:                bold;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              @care-white;
+@btn-default-bg:                 @care-orange;
+@btn-default-border:             @care-white;
 
-@btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
+@btn-primary-color:              @care-white;
+@btn-primary-bg:                 @care-orange-dark;
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 @btn-success-color:              #fff;
 @btn-success-bg:                 @brand-success;
 @btn-success-border:             darken(@btn-success-bg, 5%);
 
-@btn-info-color:                 #fff;
-@btn-info-bg:                    @brand-info;
+@btn-info-color:                 @care-white;
+@btn-info-bg:                    @care-black;
 @btn-info-border:                darken(@btn-info-bg, 5%);
 
 @btn-warning-color:              #fff;
@@ -355,12 +366,12 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+@navbar-default-color:             @care-white;
+@navbar-default-bg:                @care-black;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
+@navbar-default-link-color:                @care-white;
 @navbar-default-link-hover-color:          #333;
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         #555;
