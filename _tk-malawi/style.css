@@ -1,27 +1,40 @@
-/*
-Theme Name: _tk
-Theme URI: http://themekraft.com/tk/
-Author: ThemeKraft
-Author URI: http://themekraft.com/
-Description: Hi, I am the ultra minimal starter theme _tk, ready for your next awesome WordPress project! I am the most seamless and minimalistic integration of Twitter Bootstrap Framework into the _s starter theme from Automattic, the guys behind WordPress.
-Version: 1.1.5
-License: GNU General Public License v3.0 / License URI: http://www.gnu.org/licenses/gpl-3.0.html
-License URI: see license.txt
-Tags: gray, light, two-columns, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, sticky-post,  theme-options, threaded-comments, translation-ready
+/*CLINTON'S STYLES.CSS from Git*/
+p{
+	font-family: "Droid Serif";
+}
+.wp-post-image{
+	height:20em; /*320px*/
+	width:35.25em; /*564px*/
+}
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+/*last updated 02.12.15*/
 
-This theme is the most seamless and minimalistic integration of Twitter Bootstrap Framework into
-the _s starter theme from Automattic, the guys behind WordPress.
+/*to remove margins from thumbnails*/
+.thumbnail{
+	margin:0px;
 
-_s (or Underscores) http://underscores.me/, (C) 2012-2013 Automattic, Inc. Twitter Bootstrap
-*/
+}
 
+/*category header*/
+.categ-header{
+	background-color:black;
+	color:#fff;
+	padding:.5em 1em .5em 1em;
+	margin-left: -15px; /*taken from standard for row below*/
+	margin-right: -12px;
+	margin-bottom: .5em;
+}
+.categ-header:hover{
+	cursor:default;
+}
 
-/* My Minimal WordPress Styling comes here */
+/*used in: site-nav*/
+.no-pads{
+	padding:0px;
+}
 
-/* This is a small security for too long strings titles */
+/*Defaults below*/
+
 body {
 	word-wrap: break-word;
 }
@@ -129,7 +142,7 @@ object {
 	padding-bottom: 1.5em;
 }
 .hentry {
-	margin: 0 0 1.5em;
+	/*margin: 0 0 1.5em;*/
 }
 .sticky {
 	display: block;
@@ -233,3 +246,16 @@ display: block;
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
+
+/*arrow navigation*/
+.arrow-next {
+	width: 30%;
+	float: left;
+	margin-top: 300px;
+}
+
+.arrow-back {
+	width: 30%;
+	float: right;
+	margin-top: 300px;
+}

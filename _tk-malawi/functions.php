@@ -49,7 +49,7 @@ function _tk_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
-	
+
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
@@ -93,13 +93,15 @@ function _tk_scripts() {
 	wp_enqueue_style( '_tk-bootstrap-wp', get_template_directory_uri() . '/includes/css/bootstrap-wp.css' );
 
 	// load bootstrap css
-	wp_enqueue_style( '_tk-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.min.css' );
+	wp_enqueue_style( '_tk-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/boomstrap.css' );
 
 	// load Font Awesome css
 	wp_enqueue_style( '_tk-font-awesome', get_template_directory_uri() . '/includes/css/font-awesome.min.css', false, '4.1.0' );
 
 	// load _tk styles
 	wp_enqueue_style( '_tk-style', get_stylesheet_uri() );
+	// cascade _tk styles AFTER bootstrap to allow for override
+	add_action( 'wp_enqueue_scripts', array(&$this, 'tk-style'), 99 );
 
 	// load bootstrap js
 	wp_enqueue_script('_tk-bootstrapjs', get_template_directory_uri().'/includes/resources/bootstrap/js/bootstrap.min.js', array('jquery') );

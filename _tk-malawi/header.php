@@ -50,7 +50,7 @@
 
 <nav class="site-navigation">
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
-	<div class="container">
+	<div class="container-fluid no-pads">
 		<div class="row">
 			<div class="site-navigation-inner col-sm-12">
 				<div class="navbar navbar-default">
@@ -62,7 +62,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-	
+
 						<!-- Your site title as branding in the menu -->
 						<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</div>
@@ -91,5 +91,5 @@
 <?php // substitute the class "container-fluid" below if you want a wider content area ?>
 	<div class="container">
 		<div class="row">
-			<div id="content" class="main-content-inner col-sm-12 col-md-8">
-
+			<div id="content" class="main-content-inner col-sm-12 col-md-12">
+			
